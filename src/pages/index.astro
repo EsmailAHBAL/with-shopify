@@ -16,7 +16,6 @@ const ip = headers.get("x-vercel-forwarded-for") || Astro.clientAddress;
 const products = await getProducts({ buyerIP: ip });
 const c = await getCollec({buyerIP:ip})
 const allCollections = getAllCollections(c)
-console.log(c);
 
 
 setCache.short(Astro);

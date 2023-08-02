@@ -79,7 +79,7 @@ export const ProductResult = z
       nodes: z.array(VariantResult),
     }),
     featuredImage: ImageResult.nullable(),
-    collections : z.array(Collections)
+    collections : z.any()
    
   })
   .nullable();

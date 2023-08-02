@@ -9,13 +9,11 @@ export interface Props {
     collection:string
 }
 const { products,collection } = Astro.props as Props;
-console.log('by colllections');
 const returnProdcuts = products.filter((p)=> {
   const isTrue = p?.collections.find((c)=> c.title === collection)
  if(isTrue) return p  
   return 
 })
-console.log(returnProdcuts.length);
 
 
 ---
